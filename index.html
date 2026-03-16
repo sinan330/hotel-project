@@ -1,29 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <title>Crispy town</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Town - Best Food & Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+        }
+
+        .welcome {
+            font-size: 1.1em;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        h2 {
+            color: #ff6b35;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #f7931e;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        li:hover {
+            background: #fff3f0;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.2);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:nth-child(1) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        button:nth-child(1):hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:nth-child(2) {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        button:nth-child(2):hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 87, 108, 0.4);
+        }
+
+        button:nth-child(3) {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        button:nth-child(3):hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            header {
+                padding: 35px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Crispy town</h1>
-    <p>Welcome to Crispy town!.we serve the best food in town.and we have the best service.</p>
-    <h2>Our menu</h2>
-    <ul>
-        <li>Pizza</li>
-        <li>Burger</li>
-        <li>Fries</li>
-        <li>Coke</li>
-        <li>Ice cream</li>
-        <li>Salad</li>
-        <li>Sandwich</li>
-        <li>Hot dog</li>
-        <li>Chicken wings</li>
-        <li>Fish and chips</li>
-        <li>Alfaham Mandi</li>
-    </ul>
-    <button>book a table</button>
-    <button>order online</button>
-    <button>contact us</button>
+    <div class="container">
+        <header>
+            <h1>🍕 Crispy Town 🍔</h1>
+            <p class="welcome">We serve the best food in town with the best service. Experience culinary excellence!</p>
+        </header>
 
+        <div class="content">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>🍕 Pizza</li>
+                <li>🍔 Burger</li>
+                <li>🍟 Fries</li>
+                <li>🥤 Coke</li>
+                <li>🍦 Ice Cream</li>
+                <li>🥗 Salad</li>
+                <li>🥪 Sandwich</li>
+                <li>🌭 Hot Dog</li>
+                <li>🍖 Chicken Wings</li>
+                <li>🐟 Fish & Chips</li>
+                <li>🍖 Alfaham Mandi</li>
+            </ul>
+
+            <div class="button-container">
+                <button>Book a Table</button>
+                <button>Order Online</button>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
